@@ -94,7 +94,7 @@ nav ul li a {
 }
 
 #contact a:hover {
-    color: #fa0075;
+    color: #631e91;
 }
 
 #contact h4 {
@@ -112,9 +112,9 @@ nav ul li a {
     flex-wrap: wrap;
 }
 
-#contact ul li {
-    padding-left: 35px;
-}
+/* #contact ul li {
+    padding-left: 15px;
+} */
 
 
 .contact-grid {
@@ -125,7 +125,7 @@ nav ul li a {
 .contact-item {
     padding-top: 30px;
     height: 200px;
-    flex: 1;
+    flex: 2;
 }
 
 
@@ -140,7 +140,6 @@ footer {
 
 footer p {
     font-size: 0.9em;
-
 }
 
 .copy {
@@ -148,5 +147,24 @@ footer p {
     margin-top: 12px;
 }
 
+/* Media Queries */
 
 
+
+@media only screen and (max-width: 800px) {
+    nav ul {
+        text-align: center;
+    }
+    nav ul li {
+        margin: 20px;
+    }
+    .contact-grid {
+        flex-direction: column;
+    }
+    footer p {
+        font-size: 0.7em;
+    }
+    .contact-item {
+        height: 150px;
+    }
+}
